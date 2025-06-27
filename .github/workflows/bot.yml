@@ -2,7 +2,7 @@ name: Tweet Anime Quote
 
 on:
   schedule:
-    - cron: '01 12 * * *'  # Runs daily at 5 PM IST but this value is in UTC
+    - cron: '45 11 * * *'  # Runs daily at 5 PM IST but this value is in UTC
   workflow_dispatch:      # Manual trigger option
 
 jobs:
