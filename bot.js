@@ -48,6 +48,9 @@ async function tweetQuote() {
     console.error("❌ Failed to tweet:", err.response?.data || err.message);
   }
 }
+app.get('/run', async (req, res) => {
+  res.status(200).send("keeping it alive");
+})
 app.get('/', async (req, res) => {
   try {
     tweetQuote();
